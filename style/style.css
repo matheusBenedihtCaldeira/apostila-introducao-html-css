@@ -39,6 +39,10 @@ section{
     padding-bottom: 2%; 
 }
 
+li{
+    list-style: none;
+}
+
 .list-menu{
     display: inline;
     padding: 0.3%;
@@ -63,7 +67,7 @@ section{
 
 .examples{
     background-color: #cbd5e1;
-    border-left: solid #312e81 3px;
+    border-left: solid #1e40af 3px;
 }
 
 .codigos{
