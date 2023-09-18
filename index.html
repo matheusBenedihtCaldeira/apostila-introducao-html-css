@@ -22,6 +22,9 @@
                 <a href="#css" class="link-menu">
                     <li class="list-menu">CSS</li>
                 </a>
+                <a href="#tipos-seletores" class="link-menu">
+                    <li class="list-menu">Tipos de Seletores</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -44,7 +47,7 @@
             <br>
         </section>
 
-        <section id="tags-html">
+        <section>
             <h2>Tags HTML</h2>
             <br>
             <p>
@@ -53,75 +56,235 @@
                 ao navegador de como ele deve exibir esses elementos na página.
                 Uma tag HTML é uma sequência de caracteres envolvida por colchetes ("<" tag ">" ). As tags podem conter
                     um nome, que identifica o tipo de elemento, e podem incluir atributos, que fornecem informações
-                    adicionais sobre esse elemento.
-                    Imagine que você tem vários tipos de peças de lego coloridas. Cada tipo de peça tem uma
-                    forma e cor diferentes. As tags HTML são como esses peças de lego. Cada tipo de peça (tag)
-                    tem um propósito especial. Por exemplo, temos peças para fazer partes de texto, imagens e links.    
+                    adicionais sobre esse elemento. Imagine que você tem vários tipos de peças de lego coloridas. Cada
+                    tipo de peça tem uma forma e cor diferentes. As tags HTML são como esses peças de lego. Cada tipo de
+                    peça (tag) tem um propósito especial. Por exemplo, temos peças para fazer partes de texto, imagens e
+                    links. </p>
+                    <br>
+                    <h3>Como é formada uma Tag HTML?</h3>
+                    <br>
+                    <p>Um elemento HTML é definido por uma tag inicial, um conteúdo e uma tag final:</p>
+                    <div class="examples">
+                        <span>
+                            << /span><span style="color: #9a3412">tag</span>>Conteudo<span>
+                                    << /span><span style="color: #9a3412;">/tag</span><span>></span>
+                    </div>
+                    <h2>Exemplo</h2>
+                    <div class="examples">
+                        <div class="codigos">
+                            <span><</span>!DOCTYPE <span>html</span><span>></span>
+                            <br>
+                            <span><</span>html<span>></span>
+                            <br>
+                            <span><</span>head<span>></span>
+                            <br>    
+                            <span><</span>title<span>></span>Nome da Página<span>
+                            <</span>/title<span>></span>
+                            <br>
+                            <span><</span>/head<span>></span>
+                            <br>
+                            <span><</span>body<span>></span>
+                            <br>
+                            <span><</span>h1<span>></span>Título da Página<span><</span>/h1<span>></span>
+                            <br>
+                            <span>
+                            <</span>p<span>></span>Parágrafo<span><</span>/p<span>></span>
+                            <br>
+                            <span><</span>/body<span>></span>   
+                            <br>
+                            <span><</span>/html<span>></span>
+                        </div>
+                    </div>
+
+                    <h2>Saída</h2>
+                    <div class="examples">
+                            <h1>Título da Página</h1>
+                            <p>Parágrafo</p>
+                
+                    </div>
+
+                    <h2 id="tags-html">Principais Tags HTML</h2>
+                    <div class="examples">
+                        <ul>
+                            <li>&lt;<span style="color: #9a3412;">!DOCTYPE html</span>&gt;Define a versão do HTML que
+                                está sendo usada<span style="color: #9a3412;"></span></li>
+                            <li>&lt;<span style="color: #9a3412;">html</span>&gt;Define o elemtno raiz de um documento
+                                HTML&lt;<span style="color: #9a3412;">/html</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">head</span>&gt;Contém as informações sobre o
+                                documento, como meta informações e links para arquivos externos, como por exemplo CSS e
+                                Javascript&lt;<span style="color: #9a3412;">/head</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">title</span>&gt;Define o título da página que aparece
+                                na barra de título do navegador&lt;<span style="color: #9a3412;">/title</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">p</span>&gt;Cria parágrafos de texto&lt;<span
+                                    style="color: #9a3412;">/p</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">a</span>&gt;Define hiperlinks para outras
+                                páginas&lt;<span style="color: #9a3412;">/a</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">ul</span>&gt;Cria uma lista não ordenada&lt;<span
+                                    style="color: #9a3412;">/ul</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">ol</span>&gt;Cria uma lista ordenada&lt;<span
+                                    style="color: #9a3412;">/ol</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">li</span>&gt;Define um item de lista em listas
+                                ordenadas ou não ordenadas&lt;<span style="color: #9a3412;">/li</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">table</span>&gt;Cria uma tabela&lt;<span
+                                    style="color: #9a3412;">/table</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">tr</span>&gt;Define uma linha em uma tabela&lt;<span
+                                    style="color: #9a3412;">/tr</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">td</span>&gt;Define uma célula de dados em uma
+                                tabela&lt;<span style="color: #9a3412;">/td</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">th</span>&gt;Define uma cabeçalho de célula em uma
+                                tabela&lt;<span style="color: #9a3412;">/th</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">form</span>&gt;Cria um formulário para entrada de
+                                dados&lt;<span style="color: #9a3412;">/form</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">input</span>&gt;Define um campo de entrada em um
+                                formulário&lt;<span style="color: #9a3412;">/input</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">label</span>&gt;Define uma etiqueta para um campo de
+                                formulário&lt;<span style="color: #9a3412;">/label</span>&gt;</li>
+                            <li>&lt;<span style="color: #9a3412;">img</span>&gt;Insere uma imagem<span
+                                    style="color: #9a3412;"></span></li>
+                        </ul>
+                    </div>
+        </section>
+
+        <section id="css">
+            <h2>CSS</h2>
+            <br>
+            <p>CSS, ou Cascading Style Sheets, é uma linguagem de marcação utilizada para definir o estilo e a
+                apresentação de páginas da web. Com o CSS, é possível controlar a aparência de elementos
+                HTML, como cores, fontes, layouts e espaçamentos, permitindo assim criar interfaces visuais atraentes e
+                bem organizadas para os usuários.
             </p>
             <br>
-            <h3>Como é formada uma Tag HTML?</h3>
+            <h3>Sintaxe CSS</h3>
             <br>
-            <p>Um elemento HTML é definido por uma tag inicial, um conteúdo e uma tag final:</p>
-            <div class="examples">
-                <span><</span><span style="color: #9a3412">tag</span>>Conteudo<span><</span><span style="color: #9a3412;">/tag</span><span>></span>
-            </div>
-            <h2>Exemplo</h2>
-            <div class="examples">
-               <div class="codigos">
-                <span><</span>!DOCTYPE <span>html</span><span>></span>
+            <p>A sintaxe do CSS segue um padrão específico que envolve a definição de seletores, propriedades e valores.
+            </p>
+            <br>
+            <h4>Seletores:</h4>
+            <p>Os seletores são padrões que definem quais elementos HTML serão estilizados pelo CSS. Eles podem ser
+                elementos HTML, classes ou IDs. Os seletores são seguidos de chaves {} que contêm as propriedades e
+                valores.</p>
+            <br>
+            <h4>Propriedades:</h4>
+            <p>As propriedades são características que você deseja estilizar, como cor, fonte, tamanho, margem, etc.</p>
                 <br>
-                <span><</span>html<span>></span>
-                <br>
-                <span><</span>head<span>></span>
-                <br>
-                <span><</span>title<span>></span>Nome da Página<span><</span>/title<span>></span>
-                <br>
-                <span><</span>/head<span>></span>
-                <br>
-                <span><</span>body<span>></span>
-                <br>
-                <span><</span>h1<span>></span>Título da Página<span><</span>/h1<span>></span>
-                <br>
-                <span><</span>p<span>></span>Parágrafo<span><</span>/p<span>></span>
-                <br>
-                <span><</span>/body<span>></span>
-                <br>
-                <span><</span>/html<span>></span>
-               </div>
-            </div>
+                <h2>Exemplo</h2>
+                <div class="examples">
+                    <div class="codigos">
+                        <pre>
+                            <code>h1{
+                                color: #a21caf;
+                            }
+                            p{
+                                color: #65a30d;
+                            }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <h2>Saída</h2>
+                    <div class="examples">
+                        <div>
+                            <h1 style="color: #a21caf">Título da Página</h1>
+                            <p style="color: #65a30d">Parágrafo</p>
+                        </div>
+                    </div>
+    
+        </section>
 
-            <h2>Saída</h2>
+        <section id="tipos-seletores">
+            <h2>Tipos de seletores</h2>
+            <br>
+            <ul>
+                <li>Elemento HTML: O seletor de elemento aplica estilos a todos os elementos correspondentes. É simplesmente o nome do elemento HTML que você deseja estilizar. Como no exemplo anterior.</li>
+                <li>Classe: O seletor de classe é precedido por um ponto (.) e é usado para estilizar elementos que têm uma determinada classe atribuída.
+                    <div class="examples">
+                        <div class="codigos">
+                            <pre>
+                                <code>.titulo{
+                                    color: #a21caf;
+                                }
+                                .paragrafo{
+                                    color: #65a30d;
+                                }
+                                </code>
+                            </pre>
+                        </div>
+                </li>
+                <li>ID: O seletor de ID é precedido por um hash (#) e é usado para estilizar um elemento HTML específico com um ID único.
+                    <div class="examples">
+                        <div class="codigos">
+                            <pre>
+                                <code>#cabecalho{
+                                    font-size: 24px;
+                                }
+                                </code>
+                            </pre>
+                        </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Como inserir o CSS no meu projeto?</h2>
+            <br>
+            <p>Há várias maneiras de inserir CSS em um documento HTML para estilizar suas páginas da web.</p>
+            <br>
+            <h3>CSS Embutido(Inline)</h3>
+            <p>Você pode incluir estilos diretamente em um elemento HTML usando o atributo style. Os estilos serão aplicados apenas a esse elemento específico.</p>
+            
             <div class="examples">
                 <div class="codigos">
-                    <h1>Título da Página</h1>
-                    <p>Parágrafo</p>
+                    <span><</span>h1 style="color: red;"<span>></span>Título da Página<span><</span>/h1<span>></span>
                 </div>
             </div>
+            <br>
+            <h3>CSS Incorporado (Embedded CSS):</h3>
+            <br>
+            <p>É possível adicionar estilos dentro da tag head do seu HTML. Esses estilos se aplicarão a todo o documento.</p>
+            <br>
 
-            <h2>Principais Tags HTML</h2>
             <div class="examples">
-                <ul>
-                    <li>&lt;<span style="color: #9a3412;">!DOCTYPE html</span>&gt;Define a versão do HTML que está sendo usada<span style="color: #9a3412;"></span></li>
-                    <li>&lt;<span style="color: #9a3412;">html</span>&gt;Define o elemtno raiz de um documento HTML&lt;<span style="color: #9a3412;">/html</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">head</span>&gt;Contém as informações sobre o documento, como meta informações e links para arquivos externos, como por exemplo CSS e Javascript&lt;<span style="color: #9a3412;">/head</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;"></span>&gt;Define o título da página que aparece na barra de título do navegador&lt;<span style="color: #9a3412;">/title</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">p</span>&gt;Cria parágrafos de texto&lt;<span style="color: #9a3412;">/p</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">a</span>&gt;Define hiperlinks para outras páginas&lt;<span style="color: #9a3412;">/a</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">ul</span>&gt;Cria uma lista não ordenada&lt;<span style="color: #9a3412;">/ul</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">ol</span>&gt;Cria uma lista ordenada&lt;<span style="color: #9a3412;">/ol</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">li</span>&gt;Define um item de lista em listas ordenadas ou não ordenadas&lt;<span style="color: #9a3412;">/li</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">table</span>&gt;Cria uma tabela&lt;<span style="color: #9a3412;">/table</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">tr</span>&gt;Define uma linha em uma tabela&lt;<span style="color: #9a3412;">/tr</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">td</span>&gt;Define uma célula de dados em uma tabela&lt;<span style="color: #9a3412;">/td</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">th</span>&gt;Define uma cabeçalho de célula em uma tabela&lt;<span style="color: #9a3412;">/th</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">form</span>&gt;Cria um formulário para entrada de dados&lt;<span style="color: #9a3412;">/form</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">input</span>&gt;Define um campo de entrada em um formulário&lt;<span style="color: #9a3412;">/input</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">label</span>&gt;Define uma etiqueta para um campo de formulário&lt;<span style="color: #9a3412;">/label</span>&gt;</li>
-                    <li>&lt;<span style="color: #9a3412;">img</span>&gt;Insere uma imagem<span style="color: #9a3412;"></span></li>
-                </ul>
+                <div class="codigos">
+                    <span><</span>head<span>></span>
+                    <br>    
+                    <</span>style<span>></span>
+                    <pre>
+                        <code>
+                            body{
+                                background-color: green;
+                            }
+                        </code>
+                    </pre>
+                    <</span>/style<span>></span>
+                    <br>
+                    <span><</span>/head<span>></span>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <h3>CSS Externo</h3>
+            <br>
+            <p>Você também pode criar um arquivo CSS separado contendo todas as regras de estilo e, em seguida, vinculá-lo ao seu HTML usando a tag "link".</p>
+            
+            <div class="examples">
+                <div class="codigos">
+                    <span><</span>head<span>></span>
+                    <br>    
+                    <</span>link rel="stylesheet" href="style.css"<span>></span>
+                    <br>
+                    <span><</span>/head<span>></span>
+                    <br>
+                </div>
             </div>
         </section>
 
+        <section>
+            <h2>Fontes:</h2>
+            <ul>
+                <a href="https://www.w3schools.com/" target="_blank"><li></li>W3Schools</a>
+                <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" target="_blank"><li></li>Hostinger</a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><li></li>Developer Mozilla</a>
+            </ul>
+        </section>
     </div>
 
 

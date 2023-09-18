@@ -22,7 +22,7 @@ h1{
     line-height: 2rem; 
 }
 
-h2,h3{
+h2,h3,h4{
     font-weight: 400;
 }
 
@@ -50,16 +50,16 @@ div{
 .list-menu{
     display: inline;
     padding: 0.3%;
-    background-color: #3730a3;
+    background-color: #374151;
     list-style-type: none;
     border-width: 0px;
-    border: 1px solid #6366f1;
+    border: 1px solid #64748b;
     border-radius: 0.25rem;
     transition: background-color 0.2s ease-in-out;
 }
 
 .list-menu:hover{
-    background-color: #4f46e5;
+    background-color: #4b5563;
 }
 
 .link-menu{
